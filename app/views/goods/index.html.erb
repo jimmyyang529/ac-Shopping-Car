@@ -1,1 +1,13 @@
-<h1>產品列表</h1>
+<h1 class="text-center">產品列表</h1>
+
+<% @goods.each do |product| %>
+  <div class="product">
+    <%= link_to goods_path(product) do %>
+      <%= image_tag(product.image_url, width: 120) %>
+      <p class="text-center">
+        <%= product.name %><br>
+        $<%= product.price %>
+      </p>
+    <% end %>
+  </div>
+<% end %>
