@@ -13,11 +13,11 @@
 ActiveRecord::Schema.define(version: 20170406060311) do
 
   create_table "goods", force: :cascade do |t|
+    t.integer  "name"
     t.integer  "price"
+    t.string   "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "name"
-    t.string   "image_url"
   end
 
 end
