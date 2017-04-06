@@ -1,0 +1,2 @@
+class NotGood < ApplicationRecord
+end
